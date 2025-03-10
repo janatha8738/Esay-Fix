@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+ 
+  const navigate = useNavigate();
+
+  const handlebook = () => {
+    console.log("Book a Repair button clicked"); // Debug log
+    navigate('/booking-form'); // Matches App.jsx route
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
@@ -25,7 +33,7 @@ function Header() {
               </svg>
               <span>Profile</span>
             </Link>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
+            <button  onClick={handlebook} className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
               Book Now
             </button>
           </nav>
@@ -49,9 +57,10 @@ function Header() {
         {isMenuOpen && (
           <nav className="mt-4 md:hidden pb-4 space-y-3">
             <Link to="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Home</Link>
-            <Link to="/book" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Book Repair</Link>
+            <Link to="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Account</Link>
             <Link to="/support" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Support</Link>
-            <button className="w-full mt-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
+            <button   onClick={handlebook}
+         className="w-full mt-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
               Book Now
             </button>
           </nav>

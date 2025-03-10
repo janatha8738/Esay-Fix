@@ -41,7 +41,6 @@ function HeroSection() {
               Book expert repairs for all home appliances. Get quick, professional service at your doorstep!
             </p>
 
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={handleBookClick}
