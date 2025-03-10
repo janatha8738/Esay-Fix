@@ -1,20 +1,18 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Login from './components/Login';
 import AdminDashboard from './pages/AdminDashboard';
 import CustomerDashboard from './pages/CustomerDashboard';
 import TechnicianDashboard from './pages/TechnicianDashboard';
 import ServiceCenterDashboard from './pages/ServiceCenterDashboard';
-
+import HomePage from './pages/Homepage';
+import BookingForm from './components/CustomerComponent/BookingForm';
 function App() {
   return (
+    
     <Router>
       <Routes>
         {/* Default Route Redirects to Login */}
-        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/" element={<HomePage />} />
 
-        {/* Login Route */}
-        <Route path="/login" element={<Login />} />
-        
         {/* Admin Dashboard */}
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         
@@ -26,6 +24,9 @@ function App() {
         
         {/* Service Center Dashboard */}
         <Route path="/service-center-dashboard" element={<ServiceCenterDashboard />} />
+        
+        <Route path='/booking-form' element={<BookingForm />} />
+
       </Routes>
     </Router>
   );
