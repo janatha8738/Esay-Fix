@@ -1,5 +1,6 @@
 import React from 'react';
 import technician from '../../assets/technician.jpg';
+import { useNavigate } from 'react-router-dom';
 const steps = [
   {
     icon: '📱',
@@ -24,6 +25,11 @@ const steps = [
 ];
 
 function HowItWorksSection() {
+  const usenavigate = useNavigate();
+  const buttonclicked = ()=>{
+    console.log('Book a Repair button clicked');
+    usenavigate('/booking-form')
+  }
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -70,7 +76,7 @@ function HowItWorksSection() {
             <div className="p-8 md:p-12 md:w-2/3">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to fix your appliance?</h3>
               <p className="mb-6 text-blue-100">Book a repair appointment today and get 10% off for new customers.</p>
-              <button className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-full font-medium shadow-md transition-colors duration-200">
+              <button  onClick={buttonclicked}className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-full font-medium shadow-md transition-colors duration-200">
                 Book a Repair Now
               </button>
             </div>
