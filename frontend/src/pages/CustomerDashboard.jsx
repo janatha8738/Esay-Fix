@@ -60,44 +60,6 @@ const CustomerDashboard = () => {
       </div>
     </header>
     
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Customer Dashboard</h1>
-      <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
-        <thead>
-          <tr>
-            <th className="p-3 border-b">Name</th>
-            <th className="p-3 border-b">Service</th>
-            <th className="p-3 border-b">Date</th>
-            <th className="p-3 border-b">Status</th>
-            <th className="p-3 border-b">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bookings.map((booking) => (
-            <tr key={booking._id}>
-              <td className="p-3 border-b">{booking.name}</td>
-              <td className="p-3 border-b">{booking.serviceType}</td>
-              <td className="p-3 border-b">{new Date(booking.preferredDate).toLocaleDateString()}</td>
-              <td className="p-3 border-b">{booking.status}</td>
-              <td className="p-3 border-b flex space-x-2">
-                <button
-                  className="bg-blue-500 text-white px-4 py-2 rounded"
-                  onClick={() => navigate(`/update-booking/${booking._id}`)}
-                >
-                  Edit
-                </button>
-                <button
-                  className="bg-red-500 text-white px-4 py-2 rounded"
-                  onClick={() => cancelBooking(booking._id)}
-                >
-                  Cancel
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
   );
 };
 

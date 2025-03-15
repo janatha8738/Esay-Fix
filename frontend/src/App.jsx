@@ -8,7 +8,8 @@ import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import HowItWorksSection from './components/HowItWorksSection';
 import Footer from './components/footer';
-
+import BookingForm from './components/CustomerComponent/BookingForm';
+import Tracking from './components/CustomerComponent/RepairTrackingPage';
 
 function HomePage() {
   return (

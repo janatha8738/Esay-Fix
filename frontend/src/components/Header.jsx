@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< Updated upstream
-import logo from '../assets/logo.png';
-=======
-
->>>>>>> Stashed changes
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,11 +8,7 @@ function Header() {
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
-<<<<<<< Updated upstream
-          <img src={logo} alt="EasyFix Logo" className="w-25 h-auto"/>
-=======
             <img src="/logo.png" alt="EasyFix Logo" className="h-10 w-auto" />
->>>>>>> Stashed changes
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">EasyFix</span>
           </div>
           
@@ -30,14 +21,10 @@ function Header() {
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>
               <span>Account</span>
-            </Link>
-<<<<<<< Updated upstream
-    
-=======
+            </Link >
             <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
               Book Now
             </button>
->>>>>>> Stashed changes
           </nav>
           
           {/* Mobile menu button */}
@@ -60,10 +47,7 @@ function Header() {
           <nav className="mt-4 md:hidden pb-4 space-y-3">
             <Link to="/" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Home</Link>
             <Link to="/book" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Book Repair</Link>
-<<<<<<< Updated upstream
-=======
             <Link to="/track" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Track Order</Link>
->>>>>>> Stashed changes
             <Link to="/support" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Support</Link>
             <Link to="/profile" className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg">Account</Link>
             <button className="w-full mt-2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
@@ -76,8 +60,4 @@ function Header() {
   );
 }
 
-<<<<<<< Updated upstream
 export default Header;
-=======
-export default Header;
->>>>>>> Stashed changes
