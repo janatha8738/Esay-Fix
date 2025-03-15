@@ -3,8 +3,31 @@ import AdminDashboard from './pages/AdminDashboard';
 import CustomerDashboard from './pages/CustomerDashboard';
 import TechnicianDashboard from './pages/TechnicianDashboard';
 import ServiceCenterDashboard from './pages/ServiceCenterDashboard';
+<<<<<<< Updated upstream
 import HomePage from './pages/Homepage';
 import BookingForm from './components/CustomerComponent/BookingForm';
+=======
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import ServicesSection from './components/ServicesSection';
+import HowItWorksSection from './components/HowItWorksSection';
+import Footer from './components/footer';
+
+
+function HomePage() {
+  return (
+    <div className="min-h-screen bg-gray-100 font-sans">
+      <Header />
+      <HeroSection />
+      <ServicesSection />
+      <HowItWorksSection />
+      <Footer />
+
+    </div>
+  );
+}
+
+>>>>>>> Stashed changes
 function App() {
   return (
     
