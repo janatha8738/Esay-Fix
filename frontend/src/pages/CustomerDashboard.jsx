@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import logo from '../assets/logo.png';
 const CustomerDashboard = () => {
   const [bookings, setBookings] = useState([]);
   const navigate = useNavigate();
@@ -47,15 +47,14 @@ const CustomerDashboard = () => {
     <header className="bg-white shadow-md py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center space-x-2">
-          <img src="/logo.png" alt="EasyFix Logo" className="h-8" />
+          <img src={logo}  alt="EasyFix Logo" className="h-8" />
           <span className="text-xl font-bold text-gray-800">EasyFix</span>
         </div>
         <nav className="space-x-6">
           <a href="#" className="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">Book Repair</a>
           <a href="#" className="text-gray-600 hover:text-blue-600">Track</a>
           <a href="#" className="text-gray-600 hover:text-blue-600">Support</a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">Profile</a>
+       
         </nav>
       </div>
     </header>

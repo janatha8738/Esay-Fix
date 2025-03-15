@@ -4,9 +4,10 @@ import CustomerDashboard from './pages/CustomerDashboard';
 import TechnicianDashboard from './pages/TechnicianDashboard';
 import ServiceCenterDashboard from './pages/ServiceCenterDashboard';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import ServicesSection from './components/ServicesSection';
-import HowItWorksSection from './components/HowItWorksSection';
+import HeroSection from './components/homepageComp/HeroSection';
+import ServicesSection from './components/homepageComp/ServicesSection';
+import HowItWorksSection from './components/homepageComp/HowItWorksSection';
+import homeheader from './components/homepageComp/homeheader';
 import Footer from './components/footer';
 import BookingForm from './components/CustomerComponent/BookingForm';
 import Tracking from './components/CustomerComponent/RepairTrackingPage';
@@ -19,6 +20,7 @@ function HomePage() {
       <ServicesSection />
       <HowItWorksSection />
       <Footer />
+      <homeheader/>
 
     </div>
   );
