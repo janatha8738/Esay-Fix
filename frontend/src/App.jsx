@@ -3,10 +3,6 @@ import AdminDashboard from './pages/AdminDashboard';
 import CustomerDashboard from './pages/CustomerDashboard';
 import TechnicianDashboard from './pages/TechnicianDashboard';
 import ServiceCenterDashboard from './pages/ServiceCenterDashboard';
-<<<<<<< Updated upstream
-import HomePage from './pages/Homepage';
-import BookingForm from './components/CustomerComponent/BookingForm';
-=======
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
@@ -27,7 +23,6 @@ function HomePage() {
   );
 }
 
->>>>>>> Stashed changes
 function App() {
   return (
     
