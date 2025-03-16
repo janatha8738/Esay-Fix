@@ -167,7 +167,7 @@ const BookingForm = () => {
                     onChange={handleChange}
                     required
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
-                    placeholder="John Doe"
+                    placeholder="Eranga-harsha"
                   />
                 </div>
 
@@ -183,7 +183,7 @@ const BookingForm = () => {
                     onChange={handleChange}
                     required
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
-                    placeholder="john.doe@example.com"
+                    placeholder="Eranga@gmail.com"
                   />
                 </div>
               </div>
@@ -201,7 +201,7 @@ const BookingForm = () => {
                     onChange={handleChange}
                     required
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
-                    placeholder="(555) 123-4567"
+                    placeholder="(+94) 123-4567"
                   />
                 </div>
 
@@ -217,7 +217,7 @@ const BookingForm = () => {
                     onChange={handleChange}
                     required
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3"
-                    placeholder="123 Main St, City, State"
+                    placeholder="colombo, Sri Lanka"
                   />
                 </div>
               </div>

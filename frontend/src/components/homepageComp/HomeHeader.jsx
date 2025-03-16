@@ -25,7 +25,7 @@ function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">Home</Link>
             <Link to="/customer-dashboard" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">Dashboard</Link>
-            <Link to="/" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">Track</Link>
+            <Link to="/tracking" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">Track</Link>
             <Link to="/support" className="font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">Support</Link>
             <Link to="/profile" className="flex items-center space-x-2 font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

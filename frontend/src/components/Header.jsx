@@ -21,7 +21,7 @@ function Header() {
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>
               <span>Account</span>
-            </Link>
+            </Link >
             <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 shadow-md">
               Book Now
             </button>
